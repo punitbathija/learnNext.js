@@ -1,23 +1,25 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Layout, { siteTitle } from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <Layout home>
       <Head>
-        <title>Punit's Blog</title>
+        <title>{siteTitle}</title>
       </Head>
-      <div className={styles.container}>
-        <h1>Punit's Personal Blogs</h1>
-        <div className={styles.card}>
-          <h3 className={styles.title}>
-            <Link href="/posts/firstpost">First Post</Link>
-            <Link href="/posts/secondpost">Second Post</Link>
-          </h3>
-        </div>
-      </div>
-    </>
+      <section className={utilStyles.headingMd}>
+        <p>👋Hey, I am a Aspiring Web Developer👨‍💻</p>
+        <p>
+          💁I am fond of learning and making modern websites 🖥️ to improve my
+          skill set, I am learning Next.js⏭️
+        </p>
+
+        <Link href="/posts/firstpost">First Post</Link>
+        <br />
+        <Link href="/posts/firstpost">Second Post</Link>
+      </section>
+    </Layout>
   );
 }

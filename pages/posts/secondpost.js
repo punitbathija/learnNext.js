@@ -10,9 +10,6 @@ export default function secondpost() {
       </Head>
       <div>
         <h1>Second Post</h1>
-        <h3>
-          <Link href="/">Return back to home</Link>
-        </h3>
       </div>
     </Layout>
   );

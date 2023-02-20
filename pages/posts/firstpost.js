@@ -27,9 +27,6 @@ export default function firstpost() {
       /> */}
       <div>
         <h1>First Post</h1>
-        <h3>
-          <Link href="/">Return back to home</Link>
-        </h3>
       </div>
     </Layout>
   );
