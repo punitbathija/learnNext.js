@@ -1,0 +1,15 @@
+.container {
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+    background-color: #36454F;
+    color: white;
+}
+
+/* Important: To use CSS Modules,
+ The CSS file name must end with .module.css.
+ This is what CSS Modules does:
+ It automatically generates unique class names. As long as you use CSS Modules,
+ you don’t have to worry about class name collisions.
+ */
+
