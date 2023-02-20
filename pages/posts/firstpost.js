@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import Head from "next/head";
+import Script from "next/script";
 
 // Pages are associated with a route based on their file name. For example, in development:
 
@@ -16,6 +17,13 @@ export default function firstpost() {
       <Head>
         <title>First Post</title>
       </Head>
+      {/* <Script
+        src="https://connect.facebook.net/en_US/sdk.js"
+        strategy="lazyOnload"
+        onLoad={() =>
+          console.log("Script loaded correctly and FB is populated")
+        }
+      /> */}
       <div>
         <h1>First Post</h1>
         <h3>

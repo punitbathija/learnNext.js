@@ -9,10 +9,10 @@ export default function Home() {
       <Head>
         <title>Punit's Blog</title>
       </Head>
-      <div className="container">
+      <div className={styles.container}>
         <h1>Punit's Personal Blogs</h1>
-        <div className="card">
-          <h3 className="title">
+        <div className={styles.card}>
+          <h3 className={styles.title}>
             <Link href="/posts/firstpost">First Post</Link>
             <Link href="/posts/secondpost">Second Post</Link>
           </h3>
