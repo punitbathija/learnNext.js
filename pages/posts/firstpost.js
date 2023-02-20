@@ -4,6 +4,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import Script from "next/script";
+import Layout from "../../components/layout";
 
 // Pages are associated with a route based on their file name. For example, in development:
 
@@ -13,7 +14,7 @@ import Script from "next/script";
 
 export default function firstpost() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>First Post</title>
       </Head>
@@ -30,7 +31,7 @@ export default function firstpost() {
           <Link href="/">Return back to home</Link>
         </h3>
       </div>
-    </>
+    </Layout>
   );
 }
 

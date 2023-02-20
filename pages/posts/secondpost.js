@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
+import Layout from "../../components/layout";
 
 export default function secondpost() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>Second Post</title>
       </Head>
@@ -13,6 +14,6 @@ export default function secondpost() {
           <Link href="/">Return back to home</Link>
         </h3>
       </div>
-    </>
+    </Layout>
   );
 }
