@@ -57,3 +57,10 @@
     color: #666;
   }
   
+  .article{
+    width:fit-content ;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+  }
