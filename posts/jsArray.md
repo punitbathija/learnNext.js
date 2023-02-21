@@ -1,3 +1,8 @@
+---
+title: "Javascript Array Methods"
+date: "2023-02-21"
+---
+
 ## Summary: In this article, you’ll learn about JavaScript arrays and their basic operations.
 
 ## What is an array?

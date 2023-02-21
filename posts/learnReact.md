@@ -1,3 +1,8 @@
+---
+title: "What is React & how to go around it"
+date: "2022-10-16"
+---
+
 ### What is React?
 
 React is an open-source javascript library to build User Interfaces. It is mainly maintained by Meta and a bunch of individual developers.
