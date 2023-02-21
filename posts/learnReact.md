@@ -3,6 +3,8 @@ title: "What is React & how to go around it"
 date: "2022-10-16"
 ---
 
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671520279040/_Dm71mXJT.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp)
+
 ### What is React?
 
 React is an open-source javascript library to build User Interfaces. It is mainly maintained by Meta and a bunch of individual developers.
@@ -13,11 +15,11 @@ What do I mean by all this let's understand it with a simple analogy Everyone re
 
 A webpage is divided into DOM elements the tree like structure of DOM elements decides the structure of a webpage the DOM elements can be manipulated using JS but they have to be re-rendered to update the UI of the application this process is slow because it updates the entire DOM structure including all it's elements this is where React shines,
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671525803603/E7lTMzE9W.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671525803603/E7lTMzE9W.png?auto=compress,format&format=webp)
 
 React leverages something called VDOM(virtual dom) where an ideal or virtual representation of UI is kept in memory and synced with the real DOM by a library called ReactDOM this process is called [reconciliation](https://reactjs.org/docs/reconciliation.html) according to official React Docs, let's understand the concept of reconciliation with a diagram
 
-![](https://miro.medium.com/max/638/0*fFLhD2DrRCW3S2NB. align="center")
+![](https://miro.medium.com/max/638/0*fFLhD2DrRCW3S2NB.)
 
 Source:- [https://medium.com/@ryanbas21/react-reconciliation-7075e3f07437](https://medium.com/@ryanbas21/react-reconciliation-7075e3f07437)
 
@@ -33,15 +35,15 @@ How to set up a React Application
 
 3. Next type the command `npx create-react-app my-first-app` this would create a template application for you It would take some time so please allow some time for it to set up some boilerplate code for you once it's installed you can start your application by entering the command `npm start` by default, the application would be served on [http://localhost:3000/](http://localhost:3000/) and would look like the image below
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671790557786/b1ee6a6f-deb7-4637-8987-1e3a8ba4ee49.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671790557786/b1ee6a6f-deb7-4637-8987-1e3a8ba4ee49.png)
 
 4. Well a lot of people are overwhelmed when they see how the files are structured in a React app for the first time well don't be it will all make sense once you get your hands dirty the file structure of your app would look something like the image below
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671790902600/222cce2b-6deb-44d6-a902-6e2e977a37b5.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671790902600/222cce2b-6deb-44d6-a902-6e2e977a37b5.png)
 
 5. For now we are not concerned about anything else apart from the src folder we will understand what's going on by writing a simple Hello World! instead of the react logo animation, I want you to open the App.js file inside of the src folder we will be manipulating some code in this file to achieve our target but first, we will understand what is going on in the default App.js file.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671791533771/49a6bb3d-8508-43da-8166-374699eb3171.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671791533771/49a6bb3d-8508-43da-8166-374699eb3171.png)
 
 6. Now React under the hood uses something called webpack which bundles our modular code and prepares an optimum build to run our application it also uses something called babel which lets you write modern JS code which is supported by old browsers too
 
@@ -54,7 +56,7 @@ How to set up a React Application
 
 10. The functional approach is the modern way of writing React components. Imagine you have to build a complete Webpage, I know in the start even imagining is overwhelming, The website may have a Header &gt; Nav-Bar, Sidebar, Feeds, Sidebar, and Footer. Well in React all these are different components written similarly to App.js and Exported to be used in the Root file where the render method is called which renders all the components on the app and display it as a webpage.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671795184146/c107fd30-4b32-4aae-a064-5fe8bd7e4906.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671795184146/c107fd30-4b32-4aae-a064-5fe8bd7e4906.png)
 
 11. Well look at the index.js file and look how the App.js is imported on line 4 and how it is rendered on line 10 using the
 
@@ -69,12 +71,12 @@ root.render(
 
 similarly, more components can be written on their separate files using the functional approach and rendered on the index.js file inside the render method.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671795718060/75f4deca-9880-4350-84ef-4ef04cc591bd.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671795718060/75f4deca-9880-4350-84ef-4ef04cc591bd.png)
 
 12. Now I want you to remove all the code in App.js from lines 7 to 20 and add an  
     `<h1>Hello World!</h1>` and now visit the browser where your application is served you will find Hello World!, if your application does not start just write the command `npm start` again and you will see something like the image below
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671796321021/8b935a89-7b42-4a94-8e61-4afdf87ddddb.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671796321021/8b935a89-7b42-4a94-8e61-4afdf87ddddb.png)
 
 This is how you write your first React application
 

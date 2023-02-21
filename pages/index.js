@@ -3,6 +3,7 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { getSortedPostData } from "../lib/post";
+import Date from "../components/Date";
 
 export async function getStaticProps() {
   const allPostData = getSortedPostData();
@@ -21,11 +22,13 @@ export default function Home({ allPostData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          <span className="emoji">👋</span>Hey, I am a Aspiring Web Developer👨‍💻
+          <span className="emoji">👋</span>Hey, I am a Aspiring Web Developer
+          <span className="emoji">👨‍💻</span>
         </p>
         <p>
-          💁I am fond of learning and making modern websites 🖥️ to improve my
-          skill set, I am learning Next.js⏭️
+          <span className="emoji">💁</span>I am fond of learning and making
+          modern websites <span className="emoji"> 🖥️ </span>to improve my skill
+          set, I am learning Next.js
         </p>
         {/* 
         <Link href="/posts/firstpost">First Post</Link>
@@ -37,11 +40,11 @@ export default function Home({ allPostData }) {
           <ul className={utilStyles.list}>
             {allPostData.map(({ id, date, title }) => (
               <li className={utilStyles.listItem} key={id}>
-                {title}
+                <Link href={`/posts/${id}`}>{title}</Link>
                 <br />
-                {date}
-                <br />
-                {id}
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
               </li>
             ))}
           </ul>

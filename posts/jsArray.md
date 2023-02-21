@@ -9,7 +9,7 @@ date: "2023-02-21"
 
 An array is a collection of elements of the same type placed in contiguous memory locations that can be individually referenced by using an index to a **unique identifier.** Five values of type int can be declared as an array without having to declare five different variables (each with its own identifier.
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1661596615724/rxRkmiRDG.png align="left")
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1661596615724/rxRkmiRDG.png?auto=compress,format&format=webp)
 
 Image Credit :- https://www.javascripttutorial.net/javascript-array/
 
