@@ -39,9 +39,9 @@ export default function Home({ allPostData }) {
               <li className={utilStyles.listItem} key={id}>
                 {title}
                 <br />
-                {id}
-                <br />
                 {date}
+                <br />
+                {id}
               </li>
             ))}
           </ul>
