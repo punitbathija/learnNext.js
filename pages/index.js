@@ -22,7 +22,7 @@ export default function Home({ allPostData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          <span className="emoji">👋</span>Hey, I am a Aspiring Web Developer
+          <span className="emoji">👋</span>Hey, I am an Aspiring Web Developer
           <span className="emoji">👨‍💻</span>
         </p>
         <p>
@@ -36,7 +36,7 @@ export default function Home({ allPostData }) {
         <Link href="/posts/firstpost">Second Post</Link> */}
 
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h2 className={utilStyles.headingLg}>Blog</h2>
+          <h2 className={utilStyles.headingLg}>Blogs</h2>
           <ul className={utilStyles.list}>
             {allPostData.map(({ id, date, title }) => (
               <li className={utilStyles.listItem} key={id}>
